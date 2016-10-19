@@ -2,9 +2,8 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class mainActivity {
-
-//	public static String[] suits = { "Hearts", "Clubs", "Spades", "Diamonds" };
-	public static String[] suits = { "\u2764Hearts", "\u2663Clubs", "\u2660Spades", "\u2666Diamonds" };
+	public static String[] suits = { "Hearts", "Clubs", "Spades", "Diamonds" };
+//	public static char[] suits = { (char)(9830), (char)(9829), (char)(9824), (char)(9830) };
 	
 	public static String[] cardValues = { "2", "3", "4", "5", "6", "7", "8",
 			"9", "10", "J", "Q", "K", "A" };
@@ -14,6 +13,11 @@ public class mainActivity {
 
 	public static void main(String[] args) {
 		initialize();
+//		System.out.println((char)(9830)); //Diamonds
+//		System.out.println((char)(9829)); //Hearts
+//		System.out.println((char)(9824)); //Spades
+//		System.out.println((char)(9827)); //Clubs
+	
 		breakLine();
 		System.out.println("\tTexas Hold'em dealer for " + tableSize + " players");
 		//showDeck();
@@ -45,7 +49,7 @@ public class mainActivity {
 		int cardNo = 0;
 		for (int i = 0; i < suits.length; i++) {
 			for (int j = 0; j < cardValues.length; j++) {
-				deck[cardNo++] = suits[i].charAt(0) + cardValues[j];
+				deck[cardNo++] = suits[i].charAt(0)  + cardValues[j];
 			}
 		}
 	}
