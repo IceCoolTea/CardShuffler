@@ -4,7 +4,7 @@ import java.util.Collections;
 public class mainActivity {
 
 //	public static String[] suits = { "Hearts", "Clubs", "Spades", "Diamonds" };
-	public static String[] suits = { "♥Hearts", "♣Clubs", "♠Spades", "♦Diamonds" };
+	public static String[] suits = { "\u2764Hearts", "\u2663Clubs", "\u2660Spades", "\u2666Diamonds" };
 	
 	public static String[] cardValues = { "2", "3", "4", "5", "6", "7", "8",
 			"9", "10", "J", "Q", "K", "A" };
